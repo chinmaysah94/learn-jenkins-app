@@ -5,8 +5,8 @@ pipeline {
         stage('build') {
             agent {
                 docker {
-                    imeage 'node:18-alpine'
-                    reusenode-true
+                    image 'node:18-alpine'
+                    reuseNode-true
                 }
             }
             steps {
